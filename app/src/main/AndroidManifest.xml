@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hyeonseungson.in00total">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IN00Total">
+        <activity android:name=".NavigationActivity"></activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".GoodwordsActivity" />
+        <activity android:name=".ListView" />
+        <activity android:name=".DiceActivity" />
+        <activity android:name=".SplashActivity02" />
+        <activity android:name=".MenuInsideActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
