@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mandeum_main_navigation"
+    app:startDestination="@id/banana1Fragment">
+
+    <fragment
+        android:id="@+id/banana1Fragment"
+        android:name="com.hyeonseungson.in00total.Banana1Fragment"
+        android:label="fragment_banana1"
+        tools:layout="@layout/fragment_banana1" >
+        <action
+            android:id="@+id/action_banana1Fragment_to_pizza2Fragment"
+            app:destination="@id/pizza2Fragment" />
+        <action
+            android:id="@+id/action_banana1Fragment_to_monkey2Fragment"
+            app:destination="@id/monkey2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monkey2Fragment"
+        android:name="com.hyeonseungson.in00total.Monkey2Fragment"
+        android:label="fragment_monkey2"
+        tools:layout="@layout/fragment_monkey3" >
+        <action
+            android:id="@+id/action_monkey2Fragment_to_banana1Fragment"
+            app:destination="@id/banana1Fragment" />
+        <action
+            android:id="@+id/action_monkey2Fragment_to_pizza2Fragment"
+            app:destination="@id/pizza2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pizza2Fragment"
+        android:name="com.hyeonseungson.in00total.Pizza2Fragment"
+        android:label="fragment_pizza2"
+        tools:layout="@layout/fragment_pizza2" >
+        <action
+            android:id="@+id/action_pizza2Fragment_to_banana1Fragment"
+            app:destination="@id/banana1Fragment" />
+        <action
+            android:id="@+id/action_pizza2Fragment_to_monkey2Fragment"
+            app:destination="@id/monkey2Fragment" />
+    </fragment>
+</navigation>

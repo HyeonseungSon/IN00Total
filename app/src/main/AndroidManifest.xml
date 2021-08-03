@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hyeonseungson.in00total">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IN00Total">
-        <activity android:name=".NavigationActivity"></activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MandeumMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true" />
+        <activity android:name=".NavigationActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".GoodwordsActivity" />
         <activity android:name=".ListView" />

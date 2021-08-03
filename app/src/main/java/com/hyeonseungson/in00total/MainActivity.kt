@@ -132,6 +132,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, GoodwordsActivity::class.java)
             startActivity(intent)
         }
+        // Mandeum Main
+        val mandeumMain = findViewById<TextView>(R.id.mandeumMain)
+        mandeumMain.setOnClickListener {
+            val intent = Intent(this, MandeumMainActivity::class.java)
+            startActivity(intent)
+        }
+        // Web View
+        val recyclerView = findViewById<TextView>(R.id.webViewText)
+        recyclerView.setOnClickListener {
+            val intent = Intent(this, WebViewActivity::class.java)
+            startActivity(intent)
+        }
 
         // Log Test
         for (item in 1..10 step 2) {
